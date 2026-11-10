@@ -1,4 +1,9 @@
-/* im writing a comment */
+/* HELPFUL NOTE:
+MARGIN - BORDER - PADDING - CONTENT 
+syntax: top right bottom left (clockwise)  */
+
+
+/* BASICS: this section deals with basic HTML formatting */
 
 body {
 	background-color: white;
@@ -9,7 +14,7 @@ body {
 }
 
 header {
-	
+	scale: 85%;
 	text-align: center;
 	font-size: 40px;
 	padding: 10px;
@@ -17,7 +22,7 @@ header {
 	border-right: 30px solid yellow;
 	border-left: 30px solid red;
 	border-bottom: 50px solid blue;
-	margin: 30px;
+	/* margin: 5px; */
 	
 	
 }
@@ -26,7 +31,7 @@ nav {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	text-align: center;
-	padding: 10px 0;
+	padding: 10px;
 	margin-bottom: 30px;
 }
 
@@ -41,6 +46,29 @@ img {
 	border: 1px solid green;
 }
 
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: purple;
+}
+
+/* note to self: "footer" deals with borders, background color. 
+   "footer p" refers to the p, or text, within it. learn it! */
+footer {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: yellow;
+}
+
+footer p {
+	font-size: 14px;
+	color: lime;
+}
+
+/* These are residual from learning. use them if you want */
 .test-boxes {
 	
 	display: flex;
@@ -48,12 +76,85 @@ img {
 	flex-direction: row;
 	
 }
-
 .test-boxes div {
 	border: 2px solid black;
 	padding: 20px;
 }
 
+/* formats email prompt from buttondown */
+.email-prompt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	border-top: 25px solid green;
+	border-right: 30px solid yellow;
+	border-left: 20px solid red;
+	border-bottom: 10px solid blue;
+	margin: 10px auto;
+	
+}  
+.embeddable-buttondown-form {
+    
+	/* font-family: "EB Garamond", Garamond, Georgia, 'Times New Roman', Times, serif; */
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 16px;
+    background: #fff;
+    color: #000000;
+    font: 14px/1.4 "EB Garamond", Garamond;
+  }
+  .embeddable-buttondown-form label,
+  .embeddable-buttondown-form legend {
+    font-weight: 250;
+  }
+  .embeddable-buttondown-form input[type="email"],
+  .embeddable-buttondown-form input[type="text"],
+  .embeddable-buttondown-form select {
+    /* box-sizing: border-box; */
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #d4d4d8;
+    border-radius: 4px;
+    background: #fff;
+    color: inherit;
+    font: inherit;
+  }
+  .embeddable-buttondown-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .embeddable-buttondown-form fieldset label {
+    display: block;
+    font-weight: 400;
+  } 
+  /* THIS IS THE BUTTON */
+  .embeddable-buttondown-form input[type="submit"] {
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 4px;
+    background: blue;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .embeddable-buttondown-form p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+  }
+  .embeddable-buttondown-form p a {
+    color: #71717a;
+  }
+
+/* MUSIC RELATED: THESE DEAL WITH BANDCAMP EMBEDS AND FORMATTING ON MUSIC.HTML */
 .album {
 	display: flex;
 	gap: 30px;
@@ -81,22 +182,3 @@ img {
 	margin-top: 8px;
 }
 
-a {
-	color: blue;
-	text-decoration: underline;
-}
-
-a:visited {
-	color: purple;
-}
-
-footer {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	background-color: yellow;
-}
-
-footer p {
-	font-size: 14px;
-	color: lime;
-}
